@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <video id="video" autoplay></video>
+        <br/>
+        <button id="capture">Capture image</button>
+
+        <script type="text/javascript">
+            window.addEventListener("DOMContentLoaded", function() {
+                // Stream from the camera to the video player
+                var video = document.getElementById('video');
+
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    const getImage = async () => {
+                        video.srcObject = await navigator.mediaDevices.getUserMedia({ video: true })
+                        video.play();
+                    }
+                    getImage()
+                }
+
+                // When the user clicks the "Capture image" button, capture the image and
+                // POST it to the back end Flask app
+                document.getElementById('capture').addEventListener('click', function() {
+                    // Draw the image on a canvas so it can be captured as base64 encoded binary data
+                    var canvas = document.createElement('canvas');
+                    canvas.width = 640;
+                    canvas.height = 480;
+
+                    var context = canvas.getContext('2d');
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                    var data = {
+                        'image_base64': canvas.toDataURL("image/png")
+                    }
+
+                    // Make the POST request and get back the result
+                    const getResult = async () => {
+                        var result = await fetch('process_image', {
+                            method: 'POST',
+                            body: JSON.stringify(data),
+                            headers: { 'Content-Type': 'application/json' }
+                        })
+
+                        var jsonResult = await result.json()
+                    }
+                    getResult()
+                });
+            })
+        </script>
+    </body>
+</html>
