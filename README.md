@@ -45,10 +45,9 @@ This is a great starter project for capturing an image ready to run through AI s
 
   ```python
   ##############################################
-  #
-  # Add your AI call here
-  #
-  #
+  #                                            #
+  # Add your AI call here                      #
+  #                                            #
   ##############################################
   ```
 

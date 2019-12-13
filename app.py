@@ -19,11 +19,11 @@ def check_results():
     image = io.BytesIO(image_bytes)
 
     # Send the image to AI services
+
     ##############################################
-    #
-    # Add your AI call here
-    #
-    #
+    #                                            #
+    # Add your AI call here                      #
+    #                                            #
     ##############################################
 
     # Return a result
