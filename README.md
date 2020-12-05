@@ -6,7 +6,7 @@ This repo provides a template for a Python/Flask app that streams images from th
 
 * Select the **Use this template** button at the top of the page. This will create a new GitHub repo in your account using the code from here as the basic template.
 * Clone the new repo
-* Open it in [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=hackathoncaptureimageforai-github-jabenn). You will need the [Python extension](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python&WT.mc_id=hackathoncaptureimageforai-github-jabenn) installed in Visual Studio Code.
+* Open it in [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-0000-jabenn). You will need the [Python extension](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python&WT.mc_id=academic-0000-jabenn) installed in Visual Studio Code.
 * Open the terminal and install the pip packages from the `requirements.txt` file:
 
   ```sh
@@ -29,11 +29,11 @@ This is a great starter project for capturing an image ready to run through AI s
 
 * If you don't already have an Azure account, you will need to create one:
 
-  * Students can sign up at [aka.ms/FreeStudentAzure](https://azure.microsoft.com/free/students/?WT.mc_id=hackathoncaptureimageforai-github-jabenn) using a valid higher education email address. You won't need a credit card and will get US$100 to use for 12 months, as well as 12 months of free services. After 12 months if you are still a student you can renew for another 12 months and get another $100 and free services, and so on each year you are still a student.
+  * Students can sign up at [aka.ms/FreeStudentAzure](https://azure.microsoft.com/free/students/?WT.mc_id=academic-0000-jabenn) using a valid higher education email address. You won't need a credit card and will get US$100 to use for 12 months, as well as 12 months of free services. After 12 months if you are still a student you can renew for another 12 months and get another $100 and free services, and so on each year you are still a student.
 
-  * If you are not a student you can sign up at [aka.ms/FreeAz](https://azure.microsoft.com/free/?WT.mc_id=hackathoncaptureimageforai-github-jabenn). You will need a credit card to verify you are not a bot (you won't be charged anything), and wil get US$200 for 30 days, as well as 12 months of free services.
+  * If you are not a student you can sign up at [aka.ms/FreeAz](https://azure.microsoft.com/free/?WT.mc_id=academic-0000-jabenn). You will need a credit card to verify you are not a bot (you won't be charged anything), and wil get US$200 for 30 days, as well as 12 months of free services.
 
-* Browse the vision based Cognitive Services on the [product page](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=hackathoncaptureimageforai-github-jabenn) and select the service you want.
+* Browse the vision based Cognitive Services on the [product page](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=academic-0000-jabenn) and select the service you want.
 
 * Create a resource for the service that you want. For a lot of these services you can create a single **Cognitive Services** resource and use that key for multiple services.
 
@@ -57,7 +57,7 @@ You can see an example of a similar app that uses the Face API to identify emoti
 
 ## Deploying to Azure
 
-Once your app is complete, you can deploy it to an [Azure App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=hackathoncaptureimageforai-github-jabenn). There is an [Azure App Service extension for Visual Studio Code](https://marketplace.visualstudio.com/itemdetails?itemName=ms-azuretools.vscode-azureappservice&WT.mc_id=hackathoncaptureimageforai-github-jabenn) that you can use to allow you to deploy from inside Visual Studio Code.
+Once your app is complete, you can deploy it to an [Azure App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=academic-0000-jabenn). There is an [Azure App Service extension for Visual Studio Code](https://marketplace.visualstudio.com/itemdetails?itemName=ms-azuretools.vscode-azureappservice&WT.mc_id=academic-0000-jabenn) that you can use to allow you to deploy from inside Visual Studio Code.
 
 > Deploying apps from VS Code is not recommended for production apps, but is great for development or a hackathon
 
